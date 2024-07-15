@@ -25,6 +25,7 @@ import WalletClient from 'components/WalletClient';
 import WatchPendingTransactions from 'components/WatchPendingTransactions';
 import {shorten} from 'lib/utils';
 import Image from 'next/image';
+import Link from 'next/link';
 import {useAccount, useDisconnect} from 'wagmi';
 
 import {usePrivy, useWallets} from '@privy-io/react-auth';
@@ -53,6 +54,7 @@ export default function Home() {
   return (
     <>
       <main className="min-h-screen bg-slate-200 p-4 text-slate-800">
+        <Link href="/test">TEST</Link>
         <Image
           className="mx-auto rounded-lg"
           src={wagmiPrivyLogo}
